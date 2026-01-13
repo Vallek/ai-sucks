@@ -1,7 +1,15 @@
 body {
 	margin: 0;
+	padding: 1em 0;
 	font-size: 1.2em;
 	font-family: sans-serif;
+}
+
+.page__content {
+	max-width: 80ch;
+	margin: 0 auto;
+	padding: 0 1em;
+	box-shadow: 0 0 8px 0 rgb(128, 128, 128);
 }
 
 main ul {
@@ -18,9 +26,7 @@ li {
 header,
 main,
 footer {
-	max-width: 80ch;
-	margin: 0 auto;
-	margin-bottom: 2em;
+	display: flow-root;
 }
 
 h1 {
@@ -44,4 +50,8 @@ p {
 .header__heading,
 .footer {
 	text-align: center;
+}
+
+.footer {
+	padding-bottom: 2em;
 }
