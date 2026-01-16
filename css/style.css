@@ -12,13 +12,21 @@
 	box-shadow: 0 0 8px 0 rgb(128, 128, 128);
 }
 
+@media screen and (max-width: 400px) {
+	.page__content {
+		padding: 1vw;
+	}
+}
+
 .intro {
 	display: block;
+	min-width: 350px;
 	width: 100%;
 	height: 300px;
 	background-image: url('../img/ai-sucks.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	margin-bottom: 1em;
 }
 
