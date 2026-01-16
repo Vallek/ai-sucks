@@ -1,4 +1,4 @@
-body {
+.page {
 	margin: 0;
 	padding: 1em 0;
 	font-size: 1.2em;
@@ -12,7 +12,25 @@ body {
 	box-shadow: 0 0 8px 0 rgb(128, 128, 128);
 }
 
-main ul {
+.faq__title {
+	cursor: pointer;
+	user-select: none;
+	line-height: 2;
+	padding: 0 1em;
+	background-color: rgb(222, 255, 203);
+}
+
+.faq strong,
+.faq p {
+	display: block;
+	padding-left: 1.9em;
+}
+
+.faq strong:first-of-type {
+	margin-top: 0.5em;
+}
+
+.list {
 	margin: 0;
 	margin-bottom: 1em;
 	padding: 0;
@@ -23,7 +41,7 @@ li {
 	line-height: 1.4;
 }
 
-header,
+.header,
 main,
 footer {
 	display: flow-root;
