@@ -71,5 +71,10 @@ p {
 }
 
 .footer {
-	padding-bottom: 2em;
+	padding: 1em 0;
+}
+
+.footer > p {
+	font-size: 0.8em;
+	margin: 1em 0;
 }
