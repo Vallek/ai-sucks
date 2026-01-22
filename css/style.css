@@ -50,8 +50,10 @@
 .list {
 	margin: 0;
 	margin-bottom: 1em;
-	padding: 0;
-	list-style: none;
+	/* padding: 0; */
+	/* padding-left: 1.4rem; */
+	/* padding-right: 1.4rem; */
+	/* list-style: none; */
 }
 
 li {
@@ -107,7 +109,6 @@ p {
 
 /* Overwrite */
 h2, h3, h4,
-.list,
 p {
 	box-sizing: content-box;
 	padding-left: 1.4rem;
