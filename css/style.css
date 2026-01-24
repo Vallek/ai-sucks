@@ -56,6 +56,15 @@ li {
 	line-height: 1.4;
 }
 
+.list__item_link_yt {
+	margin-left: -5px;
+	padding-left: 0.5ch;
+}
+
+.list__item_link_yt::marker {
+	content: url('../img/yt-favicon.ico');
+}
+
 .header,
 main,
 footer {
