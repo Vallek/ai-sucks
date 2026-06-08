@@ -128,9 +128,13 @@ li {
 	padding: 1em 0;
 }
 
-.footer > p {
+.footer > .copyright {
 	font-size: 0.8em;
 	margin: 1em 0;
+}
+
+.footer > .donate {
+	margin: 0.5em;
 }
 
 /* Overwrite */
