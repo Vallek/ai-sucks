@@ -1,6 +1,5 @@
 const page = document.querySelector('.page');
 const toggleSwitchTop = document.querySelector('.toggle__theme');
-const animSwitch = document.querySelector('.settings__anim');
 
 // No theme transition on start
 window.addEventListener('load', () => {
