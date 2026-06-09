@@ -97,6 +97,10 @@ li {
 	line-height: 1.4;
 }
 
+.list__item {
+	position: relative;
+}
+
 .list__item_link_yt {
 	margin-left: -5px;
 	padding-left: 0.5ch;
@@ -104,6 +108,27 @@ li {
 
 .list__item_link_yt::marker {
 	content: url('../img/yt-favicon.ico');
+}
+
+.list__item_link_ru::marker {
+	font-size: 0.8em;
+	content: 'RU ';
+	font-weight: bold;
+	color: #fff;
+}
+
+.list__item_link_ru::before {
+	content: "";
+	display: inline-block;
+	width: 1.2em;
+	height: 1em;
+	position: absolute;
+	left: -1.4em;
+	background-color: gray;
+	border-radius: 5px;
+	z-index: -1;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 /* Send more */
