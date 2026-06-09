@@ -23,16 +23,16 @@
 <body class="page">
 	<!-- Hey there! Looking for traces of ai code? You won't find it here. This is 100% handmade, farm raised, gmo-free native frontend code) Want same for your website? Offer me a job - vwebdis@gmail.com -->
 	<script>
-			const thisPage = document.querySelector('.page');
-			// Check if user set dark theme before
-			if (localStorage.getItem('aisucks-theme') === 'dark') {
-				thisPage.classList.add('dark');
-			}
-			// Check if user prefers dark theme
-			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				thisPage.classList.add('dark');
-			}
-		</script>
+		const thisPage = document.querySelector('.page');
+		// Check if user set dark theme before
+		if (localStorage.getItem('aisucks-theme') === 'dark') {
+			thisPage.classList.add('dark');
+		}
+		// Check if user prefers dark theme
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			thisPage.classList.add('dark');
+		}
+	</script>
 	<div class="page__content">
 		<header class="header">
 			<div class="intro">
