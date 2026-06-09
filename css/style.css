@@ -115,6 +115,12 @@ li {
 	content: 'RU ';
 	font-weight: bold;
 	color: #fff;
+	display: inline-block;
+	position: absolute;
+	left: -1.4em;
+	top: 50%;
+	transform: translateY(-50%);
+	display: inline-block;
 }
 
 .list__item_link_ru::before {
@@ -127,8 +133,7 @@ li {
 	background-color: gray;
 	border-radius: 5px;
 	z-index: -1;
-	top: 50%;
-	transform: translateY(-50%);
+	margin: 0.2em 0em;
 }
 
 /* Send more */
