@@ -1,5 +1,5 @@
 const page = document.querySelector('.page');
-const toggleSwitchTop = document.querySelector('.toggle__theme');
+const toggleSwitch = document.querySelector('.toggle__theme');
 
 // No theme transition on start
 window.addEventListener('load', () => {
@@ -17,13 +17,13 @@ function switchTheme(state) {
 		page.classList.add('dark');
 		localStorage.setItem('aisucks-theme', 'dark');
 		// Toggle style state
-		toggleSwitchTop.classList.add('toggle__theme_dark');
+		toggleSwitch.classList.add('toggle__theme_dark');
 	} 
 	else if (state === 'light') {
 		page.classList.remove('dark');
 		localStorage.setItem('aisucks-theme', 'light');
 		// Toggle style state
-		toggleSwitchTop.classList.remove('toggle__theme_dark');
+		toggleSwitch.classList.remove('toggle__theme_dark');
 	}
 }
 
@@ -54,12 +54,12 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
 });
 
 // Theme toggles
-toggleSwitchTop.addEventListener('click', () => {
+toggleSwitch.addEventListener('click', () => {
 	if (!localStorage.getItem('aisucks-theme') || 
 	localStorage.getItem('aisucks-theme') === 'light') {
 		switchTheme('dark');
 	} else if (localStorage.getItem('aisucks-theme') === 'dark' || 
-	toggleSwitchTop.classList.contains === 'toggle__theme_dark') {
+	toggleSwitch.classList.contains === 'toggle__theme_dark') {
 		switchTheme('light');
 	}
 });
