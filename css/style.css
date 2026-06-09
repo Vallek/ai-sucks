@@ -1,8 +1,23 @@
+/* Dark Theme */
+.page.dark {
+	--prime-color: #c3d5d9;
+	--second-color: #a0b2b5;
+	--back-color: #002B36;
+	--back-color-2: #002B36;
+}
+
+/* Page */
 .page {
+	--prime-color: initial;
+	--second-color: #a0b2b5;
+	--back-color: #ffffff;
+	--back-color-2: rgb(222, 255, 203);
 	margin: 0;
 	padding: 1em 0;
 	font-size: 1.2em;
 	font-family: sans-serif;
+	color: var(--prime-color);
+	background-color: var(--back-color);
 }
 
 .page__content {
@@ -24,9 +39,18 @@ footer {
 }
 
 p {
+	color: var(--prime-color);
 	box-sizing: content-box;
 	padding-left: 1.4rem;
 	padding-right: 1.4rem;
+}
+
+.main li {
+	color: var(--second-color);
+}
+
+a {
+	color: var(--prime-color);
 }
 
 /* Header */
@@ -48,12 +72,16 @@ p {
 	text-align: center;
 }
 
+.header__themes {
+	padding: 0 1em 1.4rem;
+}
+
 .faq__title {
 	cursor: pointer;
 	user-select: none;
 	line-height: 2;
 	padding: 0 1em;
-	background-color: rgb(222, 255, 203);
+	background-color: var(--back-color-2);
 }
 
 .faq strong,
@@ -139,7 +167,7 @@ li {
 /* Send more */
 .send-more {
 	padding: 1em 0;
-	background-color: rgb(222, 255, 203);
+	background-color: var(--back-color-2);
 }
 
 .send-more > p {
