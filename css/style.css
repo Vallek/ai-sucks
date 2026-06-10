@@ -4,6 +4,7 @@
 	--second-color: initial;
 	--back-color: #ffffff;
 	--dark-color: #002B36; 
+	--accent-color: rgb(222, 255, 203);
 	margin: 0;
 	padding: 1em 0;
 	font-size: 1.2em;
@@ -17,6 +18,7 @@
 	--prime-color: #c3d5d9;
 	--second-color: #a0b2b5;
 	--back-color: #002B36;
+	--accent-color: #002B36;
 }
 
 .page__content {
@@ -80,7 +82,7 @@ a {
 	user-select: none;
 	line-height: 2;
 	padding: 0 1em;
-	background-color: var(--back-color);
+	background-color: var(--accent-color);
 }
 
 .faq strong,
@@ -213,7 +215,7 @@ li {
 /* Send more */
 .send-more {
 	padding: 1em 0;
-	background-color: var(--back-color);
+	background-color: var(--accent-color);
 }
 
 .send-more > p {
