@@ -96,11 +96,13 @@ a {
 /* Theme Switch */
 .themes__button {
 	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	width: 95px;
-	height: 25px;
-	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: fit-content;
+	height: 2em;
+	padding: 0 2em;
 	background-color: var(--dark-color);
 	border: none;
 	border-radius: 15px;
@@ -108,15 +110,20 @@ a {
 }
 
 .themes__button::after {
+	--circle-size: 1.25em;
+	--cricle-padding: 0.25em;
 	font-size: 1.2em;
-	content: '🌗';
+	content: '';
 	display: inline-block;
 	position: absolute;
+	width: var(--circle-size);
+	height: var(--circle-size);
 	top: 50%;
-	left: 2px;
+	left: var(--cricle-padding);
 	border-radius: 50%;
-	transform: translate(0, -54%);
-	transition: all 300ms ease-in-out;
+	background-color: var(--back-color);
+	transform: translate(0, -50%);
+	transition: left 300ms ease-in-out;
 }
 
 .dark .themes__button {
@@ -124,16 +131,12 @@ a {
 }
 
 .dark .themes__button::after {
-	left: calc(100% - 1.5em);
+	left: calc(100% - var(--circle-size) - var(--cricle-padding));
 }
 
 .themes__label {
-	padding-bottom: 1px;
-	position: absolute;
-	width: max-content;
-	top: 50%;
-	left: 2em;
-	transform: translate(0%, -50%);
+	padding: 0 0.3em;
+	width: auto;
 	color: var(--back-color);
 }
 
