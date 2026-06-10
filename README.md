@@ -9,3 +9,5 @@ This is a list of studies and opinions of professionals on so called "AI" tools 
 Please post any good examples of why ai sucks in [this Github Discussions thread](https://github.com/Vallek/ai-sucks/discussions/1).
 
 Originally this page was published on render.com which google refused to index so I switched to Github pages. If you somehow got original link the new one is [https://vallek.github.io/ai-sucks](https://vallek.github.io/ai-sucks/)
+
+[Support me of boosty](https://boosty.to/vallek) if you like this project)
