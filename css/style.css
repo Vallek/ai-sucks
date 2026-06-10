@@ -140,11 +140,6 @@ a {
 	color: var(--back-color);
 }
 
-.dark .themes__label {
-	color: var(--back-color);
-	right: 2em;
-}
-
 /* Main */
 h2 {
 	text-align: center;
