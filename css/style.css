@@ -1,23 +1,22 @@
-/* Dark Theme */
-.page.dark {
-	--prime-color: #c3d5d9;
-	--second-color: #a0b2b5;
-	--back-color: #002B36;
-	--back-color-2: #002B36;
-}
-
 /* Page */
 .page {
 	--prime-color: initial;
-	--second-color: #a0b2b5;
+	--second-color: initial;
 	--back-color: #ffffff;
-	--back-color-2: rgb(222, 255, 203);
+	--dark-color: #002B36; 
 	margin: 0;
 	padding: 1em 0;
 	font-size: 1.2em;
 	font-family: sans-serif;
 	color: var(--prime-color);
 	background-color: var(--back-color);
+}
+
+/* Dark Theme */
+.page.dark {
+	--prime-color: #c3d5d9;
+	--second-color: #a0b2b5;
+	--back-color: #002B36;
 }
 
 .page__content {
@@ -45,7 +44,7 @@ p {
 	padding-right: 1.4rem;
 }
 
-.main li {
+main li {
 	color: var(--second-color);
 }
 
@@ -81,7 +80,7 @@ a {
 	user-select: none;
 	line-height: 2;
 	padding: 0 1em;
-	background-color: var(--back-color-2);
+	background-color: var(--back-color);
 }
 
 .faq strong,
@@ -92,6 +91,55 @@ a {
 
 .faq strong:first-of-type {
 	margin-top: 0.5em;
+}
+
+/* Theme Switch */
+.themes__button {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 95px;
+	height: 25px;
+	padding: 0;
+	background-color: var(--dark-color);
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.themes__button::after {
+	font-size: 1.2em;
+	content: '🌗';
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 2px;
+	border-radius: 50%;
+	transform: translate(0, -55%);
+	transition: all 300ms ease-in-out;
+}
+
+.dark .themes__button {
+	background-color: var(--prime-color);
+}
+
+.dark .themes__button::after {
+	left: calc(100% - 1.5em);
+}
+
+.themes__label {
+	padding-bottom: 1px;
+	position: absolute;
+	width: max-content;
+	top: 50%;
+	left: 2em;
+	transform: translate(0%, -50%);
+	color: var(--back-color);
+}
+
+.dark .themes__label {
+	color: var(--back-color);
+	right: 2em;
 }
 
 /* Main */
@@ -167,7 +215,7 @@ li {
 /* Send more */
 .send-more {
 	padding: 1em 0;
-	background-color: var(--back-color-2);
+	background-color: var(--back-color);
 }
 
 .send-more > p {
